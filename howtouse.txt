@@ -1,0 +1,7 @@
+1.从远程库更新本地库数据
+	git pull origin master
+2.本地库同步到远程
+	git add xxxx（git status获取改动）
+	【git add *】
+	git commit -m “理解理解”
+	git push origin master
